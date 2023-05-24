@@ -1,0 +1,335 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 23 may. 2023, 15:05:58
+    Author     : José María Jiménez
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;600;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#contenedor {
+    background-color: #212121;
+    background-image: url(images/Icon\ Grid.png);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#titulo {
+    color: white;
+    margin: 90px;
+    font-size: 3em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(177, 93, 255);
+    text-shadow: 0 0 2em rgb(177, 93, 255);
+    border-top: 6px solid rgb(177, 93, 255);
+    border-bottom: 6px solid rgb(177, 93, 255);
+    /* text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 1),
+      0 0 30px rgba(255, 255, 255, 1), 0 0 40px #ff00de, 0 0 70px #ff00de,
+      0 0 80px #ff00de, 0 0 100px #ff00de; */
+}
+
+#botones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton {
+    width: 300px;
+    text-align: center;
+    margin: 30px;
+    text-decoration: none;
+    background-color: white;
+}
+
+.boton {
+    --green: #1bfd9c;
+    font-size: 2em;
+    padding: 0.7em 1em;
+    letter-spacing: 0.06em;
+    position: relative;
+    font-family: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 0.6em;
+    overflow: hidden;
+    transition: all 0.3s;
+    line-height: 1.4em;
+    border: 2px solid var(--green);
+    background: linear-gradient(
+        to right,
+        rgba(27, 253, 156, 0.1) 1%,
+        transparent 40%,
+        transparent 60%,
+        rgba(27, 253, 156, 0.1) 100%
+        );
+    color: var(--green);
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4),
+        0 0 9px 3px rgba(27, 253, 156, 0.1);
+}
+
+.boton:hover {
+    color: #82ffc9;
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6),
+        0 0 9px 3px rgba(27, 253, 156, 0.2);
+}
+
+.boton:before {
+    content: "";
+    position: absolute;
+    left: -4em;
+    width: 4em;
+    height: 100%;
+    top: 0;
+    transition: transform 0.4s ease-in-out;
+    background: linear-gradient(
+        to right,
+        transparent 1%,
+        rgba(27, 253, 156, 0.1) 40%,
+        rgba(27, 253, 156, 0.1) 60%,
+        transparent 100%
+        );
+}
+
+.boton:hover:before {
+    transform: translateX(15em);
+}
+
+/* SECCION JUGAR */
+.contenedor-jugar {
+    background-image: url(images/Icon\ Grid.png);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header img {
+    width: 4em;
+    margin-right: 50px;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+}
+header .titulo-jugar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+    font-size: 2.5em;
+    font-family: "Raleway", sans-serif;
+    color: #e028e5;
+    text-shadow: 0 0 1.5em #e028e5;
+}
+header i {
+    margin-left: 50px;
+    color: white;
+    font-size: 3em;
+}
+
+/* JUEGO */
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 5vh;
+}
+
+main .normas {
+    margin: 50px;
+    width: 350px;
+    background-color: #191919;
+    color: #777;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.normas h1 {
+    text-shadow: 0 0 2em #e028e5;
+}
+
+.normas p {
+    padding: 20px 40px;
+    margin-top: 20px;
+    text-align: justify;
+    font-size: 1.5em;
+}
+
+main table {
+    border-collapse: collapse;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+main td {
+    padding: 60px;
+    border: 5px solid #e028e5;
+    box-shadow: 0 0 1em #e028e5 inset;
+}
+
+table {
+    /* margin: 0 300px; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* align-self: center; */
+    background: linear-gradient(315deg, #005881, #8d0031);
+    background-size: cover;
+    box-shadow: 0 0 3em #e028e5;
+    margin-bottom: 30px;
+}
+
+main form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+main form #enviar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#enviar input,
+#enviar input:focus {
+    font-size: 17px;
+    padding: 10px 25px;
+    border-radius: 0.7rem;
+    background-image: linear-gradient(rgb(214, 202, 254), rgb(158, 129, 254));
+    border: 2px solid rgb(50, 50, 50);
+    border-bottom: 5px solid rgb(50, 50, 50);
+    box-shadow: 0px 1px 6px 0px rgb(158, 129, 254);
+    transform: translate(0, -3px);
+    transition: 0.2s;
+    transition-timing-function: linear;
+}
+
+#enviar input:active {
+    transform: translate(0, 0);
+    border-bottom: 2px solid rgb(50, 50, 50);
+}
+
+.celdaInput {
+    width: 100px;
+    height: 100px;
+    background: transparent;
+    border:none;
+    color: white;
+    font-size: 6em;
+    color: #e028e5;
+}
+
+#resultados {
+    margin: 60px
+}
+
+#resultados a,
+#resultados a:focus {
+    color: black;
+    font-family: Arial;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 10px 25px;
+    border-radius: 0.7rem;
+    background-image: linear-gradient(rgb(214, 202, 254), rgb(158, 129, 254));
+    border: 2px solid rgb(50, 50, 50);
+    border-bottom: 5px solid rgb(50, 50, 50);
+    box-shadow: 0px 1px 6px 0px rgb(158, 129, 254);
+    transform: translate(0, -3px);
+    transition: 0.2s;
+    transition-timing-function: linear;
+}
+
+#resultados a:active {
+    transform: translate(0, 0);
+    border-bottom: 2px solid rgb(50, 50, 50);
+}
+
+.cont-res {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-res p {
+    text-align: center;
+}
+
+/* VER RESULTADOS */
+.contenedor-result {
+    background-image: url(images/Icon\ Grid.png);
+    background-size: cover;
+}
+
+.contenedor-resultado {
+    min-height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resultados {
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #191919;
+    color: #777;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    padding: 40px 60px;
+    font-size: 3em;
+}
+
+.resultados p {
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+.contadores {
+    margin-right: 200px;
+    padding: 30px;
+    background-color: white;
+    position: sticky;
+    top: 50%;
+    font-size: 3em;
+    background-color: #191919;
+    color: #777;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+
+
+
+
