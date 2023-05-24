@@ -5,11 +5,11 @@ Tic tac toe game made with jsp, java, html and css. It's a study project.
 ## Author
 **JmJimenez02 - José María Jiménez**
 
-* [LinkedIn] (https://www.linkedin.com/in/jose-maria-jimenez-6b1571240/)
-* [Portfolio web] ()
+* [LinkedIn](https://www.linkedin.com/in/jose-maria-jimenez-6b1571240/)
+* [Portfolio web]()
 
 ## Live example
-- [LinkGitHubPages] ()
+- [LinkGitHubPages]()
 
 ## Any Question
 josemariajyh@gmail.com
